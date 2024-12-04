@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5e9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #1e3c72;
+    padding: 15px 5%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #b58900;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .maintenance-section, .schedule-section, .history-section {
+    padding: 40px 5%;
+  }
+  
+  #maintenance-list, #schedule-list, #history-list {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    color: #1e3c72;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #b58900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #8c6e00;
+  }
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cancel {
+    background-color: red;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px 5%;
+    background: #1e3c72;
+    color: white;
+  }
+  

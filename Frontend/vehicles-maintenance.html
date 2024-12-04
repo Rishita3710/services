@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Maintenance</title>
+    <link rel="stylesheet" href="vehicles-maintenance.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Om Roadlines</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="vehicles-maintenance.html">Maintenance</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="maintenance-section">
+        <h1>Vehicle Maintenance Records</h1>
+        <div id="maintenance-list"></div>
+        <button class="btn" onclick="openForm()">Add Maintenance Record</button>
+      </section>
+
+      <section class="schedule-section">
+        <h2>Maintenance Schedule</h2>
+        <div id="schedule-list"></div>
+        <button class="btn" onclick="openScheduleForm()">Add Schedule</button>
+      </section>
+
+      <section class="history-section">
+        <h2>Service History</h2>
+        <div id="history-list"></div>
+      </section>
+
+      <!-- Maintenance Form -->
+      <div class="form-popup" id="formPopup">
+        <form id="maintenanceForm" class="form-container">
+          <h2>Add Maintenance Record</h2>
+          <label for="vehicle">Vehicle ID:</label>
+          <input type="text" id="vehicle" name="vehicle" required />
+
+          <label for="service">Service Type:</label>
+          <input type="text" id="service" name="service" required />
+
+          <label for="date">Service Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+
+      <!-- Schedule Form -->
+      <div class="form-popup" id="schedulePopup">
+        <form id="scheduleForm" class="form-container">
+          <h2>Add Maintenance Schedule</h2>
+          <label for="vehicle-schedule">Vehicle ID:</label>
+          <input
+            type="text"
+            id="vehicle-schedule"
+            name="vehicle-schedule"
+            required
+          />
+
+          <label for="schedule-date">Scheduled Date:</label>
+          <input type="date" id="schedule-date" name="schedule-date" required />
+
+          <button type="submit" class="btn">Submit</button>
+          <button
+            type="button"
+            class="btn cancel"
+            onclick="closeScheduleForm()"
+          >
+            Close
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Om Roadlines. All Rights Reserved.</p>
+    </footer>
+
+    <script src="vehicles-maintenance.js"></script>
+  </body>
+</html>
